@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>프론트엔드 개발자 지원서</title>
+    <style>
+        body {
+            font-family: 'Malgun Gothic', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        form {
+            background: #fff;
+            padding: 20px;
+            margin-top: 50px;
+            border: 1px solid #ccc;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        h1, h2 {
+            color: #333;
+        }
+        input[type="text"],
+        input[type="tel"],
+        textarea {
+            width: 95%;
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 3px;
+        }
+        input[type="submit"],
+        input[type="reset"] {
+            padding: 10px 20px;
+            margin-right: 10px;
+            border: none;
+            border-radius: 3px;
+            cursor: pointer;
+        }
+        input[type="submit"] {
+            color: black;
+        }
+        input[type="reset"] {
+            color: black;
+        }
+        label {
+            display: block;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <form>
+        <h1>프론트엔드 개발자 지원서</h1>
+        <p>HTML, CSS, Javascript에 대한 기술적 이해와 경험이 있는 분을 찾습니다.</p>
+        <hr>
+        <h2>개인정보</h2>
+        <p>
+            <label for="name">이름</label>
+            <input type="text" id="name" placeholder="공백없이 입력하세요">
+            <label for="contact">연락처</label>
+            <input type="tel" id="contact" placeholder="전화번호를 입력하세요">
+        </p>
+        <h2>지원 분야</h2>
+        <label>
+            <input type="radio" name="field" value="webpublishing"> 웹퍼블리싱
+        </label>
+        <label>
+            <input type="radio" name="field" value="frontend"> 웹 프론트엔드
+        </label>
+        <label>
+            <input type="radio" name="field" value="mobileApp"> 모바일 앱
+        </label>
+        <h2>지원동기</h2>
+        <textarea id="motivation" rows="5" cols="70" placeholder="지원 동기를 입력하세요"></textarea>
+        <br>
+        <input type="submit" value="접수하기">
+        <input type="reset" value="다시쓰기">
+    </form>
+</body>
+</html>
