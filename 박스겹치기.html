@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+    .container {
+        width: 300px;
+        background-color: royalblue;
+        position: relative;
+      }
+      .container .item {
+        width: 100px;
+        height: 100px;
+        border: 4px dashed red;
+        background-color: orange;
+      }
+      
+      .container .item:nth-child(1) {
+        position: relative;
+        z-index: 1;
+      }
+      .container .item:nth-child(3) {
+        position: absolute;
+        top: 50px;
+        left: 50px;
+        z-index: 1;
+      }
+      .container .item:nth-child(2) {
+        position: relative;
+      }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="item">1</div>
+        <div class="item">3</div>
+        <div class="item">2</div>
+      </div>
+</body>
+</html>
