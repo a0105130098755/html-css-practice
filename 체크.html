@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Checkbox Animation</title>
+<style>
+  /* 체크박스 숨기기 */
+  input[type="checkbox"] {
+    display: none;
+  }
+
+  /* 체크박스 라벨 스타일 */
+  label {
+    display: inline-block;
+    cursor: pointer;
+  }
+
+  /* 애니메이션 박스 스타일 */
+  .animation-box {
+    width: 100px;
+    height: 100px;
+    background-color: blue;
+    transition: transform 0.3s ease; /* 변형 애니메이션 */
+    transform: translateX(0); /* 초기 위치 */
+  }
+
+  input[type="checkbox"]:checked + label + .animation-box {
+    transform: translateX(100px); 
+  }
+</style>
+</head>
+<body>
+
+<input type="checkbox" id="myCheckbox">
+<label for="myCheckbox">체크박스</label>
+<div class="animation-box"></div>
+
+</body>
+</html>

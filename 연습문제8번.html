@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>로그인 폼</title>
+<style>
+  body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    height: 100vh;
+    background: #f4f4f4;
+  }
+
+  .login-container {
+    width: 304px; /* 변경된 가로 크기 */
+    height: 390px; /* 변경된 세로 크기 */
+    padding: 20px;
+    background: #ffffff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 4px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .login-container h2, .login-container button, .login-container a {
+    font-family: 'Roboto', sans-serif;
+    color: #505050;
+  }
+
+  .google-login {
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold; /* 글씨체 두께를 bold로 설정 */
+    width: 228px; /* 변경된 가로 크기 */
+    height: 44px; /* 변경된 세로 크기 */
+    border: 1px solid #eaeaea;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    margin-bottom: 20px;
+    cursor: pointer;
+  }
+
+  .google-login img {
+    margin-right: 10px;
+  }
+
+  .login-container input {
+    font-size: 14px;
+    color: #000;
+    background: #eaeaea;
+    border: 1px solid #eaeaea;
+    border-radius: 4px;
+    margin-bottom: 14px;
+    padding: 10px;
+    width: calc(100% - 22px); /* Adjust for border and padding */
+  }
+
+  .login-container button {
+    background: #373f3c;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    padding: 10px;
+    width: 100%;
+    cursor: pointer;
+    margin-bottom: 14px;
+  }
+
+  .login-container .forgot-password {
+    font-size: 14px;
+    color: #2c3e50;
+    text-align: center;
+    display: block;
+    text-decoration: none;
+  }
+
+</style>
+</head>
+<body>
+  <div class="login-container">
+    <div class="google-login">
+      <img src="./image/다운로드.png" alt="Google Login" height="24px">
+      <span>Log in with Google</span>
+    </div>
+    <h2>or</h2>
+    <input type="text" placeholder="Username" style="font-weight: bold;"/>
+    <input type="password" placeholder="Password" style="font-weight: bold;"/>
+    <button>LOGIN</button>
+    <a href="#" class="forgot-password">Forgot your password?</a>
+  </div>
+</body>
+</html>
